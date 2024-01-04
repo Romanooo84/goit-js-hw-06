@@ -1,8 +1,7 @@
 const list = document.querySelectorAll('h2')
-const listUl = document.querySelectorAll('ul')
+const nameList=[]
 console.log(`Number of categories: ${list.length}`)
-console.log(listUl)
 list.forEach(function callback(element) {
-    console.log(element)
+    nameList.push(element.textContent)
 });
-
+console.log(nameList)
