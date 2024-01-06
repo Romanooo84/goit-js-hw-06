@@ -8,9 +8,11 @@ const ingredients = [
 ];
 
 const list = document.querySelector("#ingredients");
-
+list.classList.add("item");
+let tempList=[]
 ingredients.forEach(element => {
   const item = document.createElement("li");
   item.textContent = element;
-  list.append(item);
+  tempList.push(item);
 })
+list.append(...tempList)
