@@ -10,7 +10,7 @@ const ingredients = [
 const list = document.querySelector("#ingredients");
 
 ingredients.forEach(element => {
-  const Item = document.createElement("li");
-  Item.textContent = element;
-list.append(Item);
+  const item = document.createElement("li");
+  item.textContent = element;
+  list.append(item);
 })
