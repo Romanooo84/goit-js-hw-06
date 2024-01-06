@@ -9,7 +9,7 @@ section.forEach(element => {
     // wybieram tylko nagłówek h2 i wysietlam tylko zawarty w nim tekst
     const categories = element.firstElementChild
     console.log(`Category: ${categories.textContent}`)
-    //pobieram dzieci ul (ostatnie dziecko dla li---> lastElementChild to ul, dzieci dla ul to li ---> children)
+    //pobieram dzieci ul (ostatnie dziecko dla li---> lastElementChild to ul, dzieci dla ul to ---> children czyli wszystkie li)
     const ulChild = element.lastElementChild.children
     console.log(`Elements: ${ulChild.length}`) 
 });
