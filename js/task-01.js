@@ -7,10 +7,9 @@ console.log(`Number of categories: ${section.length}`)
 // dla kazdego elementy z listy section 
 section.forEach(element => {
     // wybieram tylko nagłówek h2 i wysietlam tylko zawarty w nim tekst
-    const categories = element.querySelector('h2')
+    const categories = element.firstElementChild
     console.log(`Category: ${categories.textContent}`)
-    // wybieram wszysttkie elementy li zawarte w ul i wysietlam dlugosć listy
-    const list = element.querySelectorAll('ul li')
-    console.log(`Elements: ${list.length}`)
-    
+    //pobieram dzieci ul (ostatnie dziecko dla li---> lastElementChild to ul, dzieci dla ul to li ---> children)
+    const ulChild = element.lastElementChild.children
+    console.log(`Elements: ${ulChild.length}`) 
 });
