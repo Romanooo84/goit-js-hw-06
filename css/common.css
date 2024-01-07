@@ -23,5 +23,9 @@ button {
   cursor: pointer;
 }
 
+gallery {
+  display: flex;
+}
+
 
 
