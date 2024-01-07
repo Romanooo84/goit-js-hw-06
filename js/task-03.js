@@ -15,7 +15,6 @@ const images = [
 
 const list = document.querySelector(".gallery");
 //mapuje images i tworzę ciąg znaków z kodem html. Dla src i alt pobieram dane z tabllicy images. join łaczy tablice w ciąg znaków
-const markup = images.map(image => `<li><img src="${image.url}" alt="${image.alt}" height: 240px;
-  width: 240px></li>`);
+const markup = images.map(image => `<li><img class="img-block" src="${image.url}" alt="${image.alt}"></li>`);
 console.log(markup)
 list.insertAdjacentHTML("beforeend", markup);
