@@ -16,6 +16,7 @@
             rgb(112, 93, 52)85%);
 }
 
+
 .img-block {
     display: block;
     max-width: 800px;
@@ -36,4 +37,5 @@
         5px 7px 6px rgba(216, 5, 5, 0.2);
     transition: transform 1250ms cubic-bezier(0.4, 0, 0.2, 1),
         box-shadow 1250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
