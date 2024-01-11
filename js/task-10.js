@@ -23,7 +23,7 @@ let boxLength = 0
 buttonCreate.addEventListener("click", () => {
   // pobiera wartość value
   value = textInput.value;
-  //uruchamia funkcję
+  //uruchamia funkcję z wartością value
   createBoxes(value)
 })
 
